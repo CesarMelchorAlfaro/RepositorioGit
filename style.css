@@ -1,0 +1,213 @@
+/* Desarrollado por Cesar Melchor Alfaro 5J */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    min-height: 100%;
+    padding: 0 10px 0;
+}
+
+.grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 250px auto;
+    grid-template-rows: 100px 550px 550px 100px;
+    grid-template-areas:
+    "header header"
+    "nav article"
+    "nav article2"
+    "footer footer";
+}
+
+.header {
+   grid-area: header; 
+   background-color:darkred;
+
+}
+
+.nav {
+    grid-area: nav; 
+    background-color: darkred;
+ }
+
+ .article {
+     grid-area: article;
+     background-color:rgb(235, 235, 235);
+ }
+
+ .article2 {
+    grid-area: article2;
+    background-color: rgb(235, 235, 235);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkred;
+}
+
+.div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 1px;
+    border-radius: 3px;
+}
+
+.logo {
+    padding: 0 60px;
+    color: white;
+    text-decoration: none;
+    width: auto;
+    margin-top: -2px;
+}
+
+.menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    text-align: center;
+    padding: 0 30px;
+    margin-top: 30px;
+}
+
+.menu-elementos {
+    font-size: 18px;
+    margin: 0 10px;
+    text-transform: uppercase;
+}
+
+.menu-link {
+    text-decoration: none;
+    padding: 5px 25px;
+    border-radius: 5px;
+    background-color: white;
+    color: darkred;
+}
+
+.menu-link:hover {
+    background-color: darkred;
+    color: white;
+    transition: 0.5s
+}
+
+.buscar {
+    padding: auto;
+    margin: 0 -10px;
+    margin-top: 25px;
+}
+
+.buscar input {
+    width: 180px;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: darkred;
+    outline: none;
+    border: 1px solid darkred;
+    border-radius: 30px;
+}
+
+.lente {
+    padding: 10px;
+    border-radius: 20%;
+}
+
+.texto {
+    text-align: justify;
+    padding: 0 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.subtitulos {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding:10px 0;
+    height: auto;
+}
+
+.container-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 30%;
+    padding: 30px 0;
+    overflow: hidden;
+    background: darkred;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 60px;
+    box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.card__img{
+    width: 95%;
+    height: 200px;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+.cards__text{
+    text-align: left;
+    width: 90%;
+    margin:0 auto;
+}
+
+.card__list{
+    color: #FFF;
+    font-weight: 700;
+    margin: 25px 0 12px ;
+    font-size: 18px;
+}
+
+
+.card__copy{
+    color: white;
+    margin-bottom: 16px;
+}
+
+.contacto{
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.contact__title {
+    font-size: 20px;
+    margin: 0px 90px 30px;
+    color: white;
+    }
